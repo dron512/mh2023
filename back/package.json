@@ -1,7 +1,13 @@
 {
+<<<<<<< HEAD
   "name": "mh",
   "version": "1.0.0",
   "description": "git clone https://github.com/dron512/mh2023",
+=======
+  "name": "mh2023",
+  "version": "1.0.0",
+  "description": "",
+>>>>>>> ff4da110972eec0f69b4f87fea9b98a012a3ec79
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -3,7 +3,10 @@
 # dependencies
 /back/node_modules
 /front/node_modules
+<<<<<<< HEAD
 
+=======
+>>>>>>> ff4da110972eec0f69b4f87fea9b98a012a3ec79
 /.pnp
 .pnp.js
 

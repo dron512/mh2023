@@ -12,3 +12,11 @@ app.get("/",(req,res)=>{
 app.listen(3001,()=>{
     console.log("server running on 3001");
 })
+
+
+
+
+
+
+
+>>>>>>> ff4da110972eec0f69b4f87fea9b98a012a3ec79
