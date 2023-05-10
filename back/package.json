@@ -1,0 +1,16 @@
+{
+  "name": "mh2023",
+  "version": "1.0.0",
+  "description": "git clone https://github.com/dron512/mh2023 hello world",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}
