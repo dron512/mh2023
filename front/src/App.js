@@ -2,7 +2,6 @@ import './App.css';
 import axios from "axios";
 
 //npm start
-
 const DoA = () => {
   return <h1>DoAS</h1>;
 };

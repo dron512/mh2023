@@ -1,0 +1,22 @@
+const express = require('express');
+const router = express.Router();
+const {User} = require('../db/database');
+
+router.get("/",(req,res)=>{
+    res.send("text");
+    User.create({
+        username:"aaa",
+        email:"email123s",
+        password:"password"
+    });
+})
+
+router.get("/aa",(req,res)=>{
+    res.send("aaa");
+})
+
+router.get("/aaa",(req,res)=>{
+    res.send("새로 추가 함...");
+})
+
+module.exports = router;
