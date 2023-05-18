@@ -1,5 +1,15 @@
 const express = require('express');
 const router = express.Router();
+const {User} = require('../db/database');
+
+router.get("/",(req,res)=>{
+    res.send("text");
+    User.create({
+        username:"aaa",
+        email:"email",
+        password:"password"
+    });
+})
 
 router.get("/",(req,res)=>{
     res.send("text");
