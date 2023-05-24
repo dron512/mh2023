@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 
 const indexRouter = require('./router/inedexRouter');
-const boardRouter = require('./router/boardRouter')
+const boardRouter = require('./router/boardRouter');
 
 require('./db/database');
 
@@ -17,5 +17,5 @@ app.use("/",indexRouter);
 app.use("/board",boardRouter);
 
 app.listen(port, () => {
-    console.log("server running on 3001");
+    console.log("server running on 3001"); 
 })

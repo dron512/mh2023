@@ -2,13 +2,21 @@ const express = require('express');
 const router = express.Router();
 const {User} = require('../db/database');
 
-router.get("/",(req,res)=>{
-    res.send("text");
+const bodyParser = require('body-parser');
+
+router.use(bodyParser.urlencoded({ extended: false }));
+router.use(bodyParser.json());
+
+router.post("/user-add",(req,res)=>{
+    console.log(req.body);
+    
     User.create({
         username:"aaa",
         email:"email",
         password:"password"
     });
+    
+    res.send(req.body);
 })
 
 router.get("/",(req,res)=>{
