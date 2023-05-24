@@ -1,5 +1,6 @@
 import './App.css';
 import axios from 'axios';
+import SignInSide from './components/SigninSide';
 
 const DoA = () => {
   return (
@@ -12,19 +13,9 @@ const DoA = () => {
 
 
 function App() {
-  const back123 = () => {
-    axios.get('http://localhost:8000/')
-      .then(response => {
-        console.log(response)
-      }
-      )
-  }
   return (
     <div className="App">
-      <DoA />
-      <div>
-        <button onClick={back123}>Click me</button>
-      </div>
+      <SignInSide />
     </div>
   );
 }

@@ -25,7 +25,7 @@ const User = sequelize.define('User', {
     },
 });
 
-sequelize.sync({ force: true })
+sequelize.sync({ force: false })
     .then(() => { console.log("잘됨") })
 
 

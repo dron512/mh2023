@@ -1,14 +1,21 @@
 const express = require('express')
-const cors = require('cors')
+
 const indexRouter = require('./router/indexRouter')
 const BoardRouter = require('./router/BoardRouter')
 const app = express()
-app.use('/', indexRouter)
-app.use('/board', BoardRouter)
+
 
 require('./db/batabase');
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+const cors = require('cors')
+
 const port = 8000
+
+app.use('/', indexRouter)
+app.use('/board', BoardRouter)
+
 
 app.use(cors())
 app.listen(port, () => {
