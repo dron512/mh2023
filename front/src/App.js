@@ -1,23 +1,11 @@
 import './App.css';
-import axios from "axios";
-
-//npm start
-const DoA = () => {
-  return <h1>DoAS</h1>;
-};
+import SignInSide from './components/SignInSide';
 
 function App() {
-  const doRoot = ()=>{
-    axios.get(`http://localhost:3001`)
-    .then(result=>{
-      console.log(result);
-    });
-  }
+ 
   return (
     <div className="App">
-      { DoA() }
-      <DoA/>
-      <button onClick={doRoot}>back호출</button>
+      <SignInSide/>
     </div>
   );
 }

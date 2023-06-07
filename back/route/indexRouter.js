@@ -2,12 +2,23 @@ const express = require('express');
 const router = express.Router();
 const {User} = require('../db/database');
 
-router.get("/",(req,res)=>{
-    res.send("text");
+const bcrypt = require('bcrypt');
+
+router.post("/", async (req,res)=>{
+    const {username,email,password} = req.body;
+    const cryptpassword = await bcrypt.hash(password,12);
     User.create({
-        username:"aaa",
-        email:"email123s",
-        password:"password"
+        username,
+        email,
+        password:cryptpassword
+    })
+    .then(()=>{
+        console.log("저장 성공");
+        res.send("저장 성공");
+    })
+    .catch((err)=>{
+        console.log("email 중복");
+        res.send("email 중복");
     });
 })
 

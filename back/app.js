@@ -10,7 +10,10 @@ const app = express();
 const port = 3001;
 
 // node app.js
+app.use(express.urlencoded({extended:true}));
+app.use(express.json());
 app.use(cors());
+
 
 app.use("/",indexRouter);
 app.use("/board",boardRouter);
